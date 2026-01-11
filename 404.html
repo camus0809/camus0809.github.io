@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://camus0809.github.io/404.html'>
 
-<link rel="stylesheet" href="/scss/style.min.56034473aec2c4449a3d1691ab8dd3245a2ff137fe7602a34cb8295851b98118.css"><meta property='og:title' content="404 Page not found">
+<link rel="stylesheet" href="/scss/style.min.d66927689f2ced362ac7cafa59e72ea8cd189a10731a80da83b310b4f3ff7d1e.css"><meta property='og:title' content="404 Page not found">
 <meta property='og:description' content="愿我们在清醒的现实再会">
 <meta property='og:url' content='https://camus0809.github.io/404.html'>
 <meta property='og:site_name' content='hkul'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-01-11T17:30:27&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-01-11T23:30:18&#43;08:00 '/>
 <meta name="twitter:title" content="404 Page not found">
 <meta name="twitter:description" content="愿我们在清醒的现实再会">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -153,6 +153,25 @@
         
         
         <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>检索</span>
+            </a>
+        </li>
+        
+        
+        <li >
             <a href='/%E9%93%BE%E6%8E%A5/' >
                 
                 
@@ -203,7 +222,41 @@
     <div class="not-found-card">
         <h1 class="article-title">404 错误</h1>
         <h2 class="article-subtitle">页面不存在</h2>
-    </div><footer class="site-footer">
+    </div><form action="/search/" class="search-form widget" data-json="https://camus0809.github.io/search/index.json">
+            <p>
+                <label>搜索</label>
+                <input id="searchInput" name="keyword" required placeholder="输入关键词..." />
+            
+                <button title="搜索">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                </button>
+            </p>
+        </form>
+
+        <div class="search-result">
+            <h3 class="search-result--title section-title"></h3>
+            <div class="search-result--list article-list--compact"></div>
+        </div>
+        
+        <script>
+            window.searchResultTitleTemplate = "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+        </script><script type="text/javascript" src="/ts/search.js" defer></script>
+
+        <script>
+            const wrongUrl = new URL(window.location.href);
+
+            
+            const searchKeyword = decodeURIComponent(wrongUrl.pathname).split(/[/|-]/).join(' ').trim();
+
+            document.getElementById('searchInput').setAttribute('value', searchKeyword);
+        </script><footer class="site-footer">
     <section class="copyright">
         &copy; 
         
