@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hobby on hkul</title>
+        <link>https://camus0809.github.io/categories/hobby/</link>
+        <description>Recent content in Hobby on hkul</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>hkul</copyright><atom:link href="https://camus0809.github.io/categories/hobby/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【XML】入门学习</title>
+        <link>https://camus0809.github.io/p/xml%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Sun, 11 Jan 2026 17:00:27 +0800</pubDate>
+        
+        <guid>https://camus0809.github.io/p/xml%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;h2 id=&#34;xml用途&#34;&gt;XML用途
+&lt;/h2&gt;&lt;h2 id=&#34;xml语法&#34;&gt;XML语法
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
