@@ -7,7 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>hkul</copyright>
-        <lastBuildDate>Tue, 13 Jan 2026 00:21:33 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 17 Jan 2026 15:58:14 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Embedded</title>
+        <link>https://camus0809.github.io/tags/embedded/</link>
+        <pubDate>Tue, 13 Jan 2026 12:56:26 +0800</pubDate>
+        
+        <guid>https://camus0809.github.io/tags/embedded/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>STM32</title>
+        <link>https://camus0809.github.io/tags/stm32/</link>
+        <pubDate>Tue, 13 Jan 2026 12:56:26 +0800</pubDate>
+        
+        <guid>https://camus0809.github.io/tags/stm32/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Latex</title>
         <link>https://camus0809.github.io/tags/latex/</link>
         <pubDate>Mon, 12 Jan 2026 22:35:55 +0800</pubDate>
