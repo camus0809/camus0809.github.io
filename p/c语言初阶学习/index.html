@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="分支与循环语句 语句 C语言的语句可以分为一下五类： 表达式语句 函数调用语句 控制语句 用于控制程序的执行流程，以实现程序的各种结构方式，它们由特定的语句定义符组成，C语言有九种控制语句，可分为3类 条件判断语句/分支语句：if语句、switch语句 循环执行语句：do while语句、while语句、for语句 转向语句：break语句、goto语句、continue语句、return语句 复合语句 空语句 分支语句 if语句 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 //\t语法结构 if(expression) sentence; if(expression) sentence 1; else sentence 2; //\t多分支 if(expression 1) sentence 1; else if(expression 2) sentence 2; else if ... else sentence n; Note 如果表达式的结果为真，语句执行 C语言中表示真假的方式 0为假，非0为真 若无大括号， if与最近的else匹配 代码风格： 变量的命名：有意义，规范 空格、空行、换行的使用 更好的技巧 比较语句中，将常量置于左位更佳 1 if(3 == a) // 优于 if(a == 3) switch语句 switch语句也是一种分支语句，常常用于多分支的情况\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一. 分支与循环语句 1. 语句 C语言的语句可以分为一下五类： 表达式语句 函数调用语句 控制语句 用于控制程序的执行流程，以实现程序的各种结构方式，它们由特定的语句定义符组成，C语言有九种控制语句，可分为3类 条件判断语句/分支语句：if语句、switch语句 循环执行语句：do while语句、while语句、for语句 转向语句：break语句、goto语句、continue语句、return语句 复合语句 空语句 2. 分支语句 (1) if语句 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 //\t语法结构 if(expression) sentence; if(expression) sentence 1; else sentence 2; //\t多分支 if(expression 1) sentence 1; else if(expression 2) sentence 2; else if ... else sentence n; Note 如果表达式的结果为真，语句执行 C语言中表示真假的方式 0为假，非0为真 若无大括号， if与最近的else匹配 代码风格： 变量的命名：有意义，规范 空格、空行、换行的使用 更好的技巧 比较语句中，将常量置于左位更佳 1 if(3 == a) // 优于 if(a == 3) (2) switch语句 switch语句也是一种分支语句，常常用于多分支的情况\n">
 <title>【C语言】初阶学习</title>
 
 <link rel='canonical' href='https://camus0809.github.io/p/c%E8%AF%AD%E8%A8%80%E5%88%9D%E9%98%B6%E5%AD%A6%E4%B9%A0/'>
 
-<link rel="stylesheet" href="/scss/style.min.7e30aeae5f5baf2ec290bf0021d36ae4ecba244e161378a5ebd6d10496c2b0ff.css"><meta property='og:title' content="【C语言】初阶学习">
-<meta property='og:description' content="分支与循环语句 语句 C语言的语句可以分为一下五类： 表达式语句 函数调用语句 控制语句 用于控制程序的执行流程，以实现程序的各种结构方式，它们由特定的语句定义符组成，C语言有九种控制语句，可分为3类 条件判断语句/分支语句：if语句、switch语句 循环执行语句：do while语句、while语句、for语句 转向语句：break语句、goto语句、continue语句、return语句 复合语句 空语句 分支语句 if语句 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 //\t语法结构 if(expression) sentence; if(expression) sentence 1; else sentence 2; //\t多分支 if(expression 1) sentence 1; else if(expression 2) sentence 2; else if ... else sentence n; Note 如果表达式的结果为真，语句执行 C语言中表示真假的方式 0为假，非0为真 若无大括号， if与最近的else匹配 代码风格： 变量的命名：有意义，规范 空格、空行、换行的使用 更好的技巧 比较语句中，将常量置于左位更佳 1 if(3 == a) // 优于 if(a == 3) switch语句 switch语句也是一种分支语句，常常用于多分支的情况\n">
+<link rel="stylesheet" href="/scss/style.min.8f04a8107d90d9ad48016033530921ef715506a164959bfbb3fd6b2b4319b678.css"><meta property='og:title' content="【C语言】初阶学习">
+<meta property='og:description' content="一. 分支与循环语句 1. 语句 C语言的语句可以分为一下五类： 表达式语句 函数调用语句 控制语句 用于控制程序的执行流程，以实现程序的各种结构方式，它们由特定的语句定义符组成，C语言有九种控制语句，可分为3类 条件判断语句/分支语句：if语句、switch语句 循环执行语句：do while语句、while语句、for语句 转向语句：break语句、goto语句、continue语句、return语句 复合语句 空语句 2. 分支语句 (1) if语句 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 //\t语法结构 if(expression) sentence; if(expression) sentence 1; else sentence 2; //\t多分支 if(expression 1) sentence 1; else if(expression 2) sentence 2; else if ... else sentence n; Note 如果表达式的结果为真，语句执行 C语言中表示真假的方式 0为假，非0为真 若无大括号， if与最近的else匹配 代码风格： 变量的命名：有意义，规范 空格、空行、换行的使用 更好的技巧 比较语句中，将常量置于左位更佳 1 if(3 == a) // 优于 if(a == 3) (2) switch语句 switch语句也是一种分支语句，常常用于多分支的情况\n">
 <meta property='og:url' content='https://camus0809.github.io/p/c%E8%AF%AD%E8%A8%80%E5%88%9D%E9%98%B6%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='hkul'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='CLanguage' /><meta property='article:published_time' content='2026-01-11T16:52:05&#43;08:00'/><meta property='article:modified_time' content='2026-01-17T15:58:14&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='CLanguage' /><meta property='article:published_time' content='2026-01-11T16:52:05&#43;08:00'/><meta property='article:modified_time' content='2026-01-21T21:58:48&#43;08:00'/>
 <meta name="twitter:title" content="【C语言】初阶学习">
-<meta name="twitter:description" content="分支与循环语句 语句 C语言的语句可以分为一下五类： 表达式语句 函数调用语句 控制语句 用于控制程序的执行流程，以实现程序的各种结构方式，它们由特定的语句定义符组成，C语言有九种控制语句，可分为3类 条件判断语句/分支语句：if语句、switch语句 循环执行语句：do while语句、while语句、for语句 转向语句：break语句、goto语句、continue语句、return语句 复合语句 空语句 分支语句 if语句 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 //\t语法结构 if(expression) sentence; if(expression) sentence 1; else sentence 2; //\t多分支 if(expression 1) sentence 1; else if(expression 2) sentence 2; else if ... else sentence n; Note 如果表达式的结果为真，语句执行 C语言中表示真假的方式 0为假，非0为真 若无大括号， if与最近的else匹配 代码风格： 变量的命名：有意义，规范 空格、空行、换行的使用 更好的技巧 比较语句中，将常量置于左位更佳 1 if(3 == a) // 优于 if(a == 3) switch语句 switch语句也是一种分支语句，常常用于多分支的情况\n">
+<meta name="twitter:description" content="一. 分支与循环语句 1. 语句 C语言的语句可以分为一下五类： 表达式语句 函数调用语句 控制语句 用于控制程序的执行流程，以实现程序的各种结构方式，它们由特定的语句定义符组成，C语言有九种控制语句，可分为3类 条件判断语句/分支语句：if语句、switch语句 循环执行语句：do while语句、while语句、for语句 转向语句：break语句、goto语句、continue语句、return语句 复合语句 空语句 2. 分支语句 (1) if语句 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 //\t语法结构 if(expression) sentence; if(expression) sentence 1; else sentence 2; //\t多分支 if(expression 1) sentence 1; else if(expression 2) sentence 2; else if ... else sentence n; Note 如果表达式的结果为真，语句执行 C语言中表示真假的方式 0为假，非0为真 若无大括号， if与最近的else匹配 代码风格： 变量的命名：有意义，规范 空格、空行、换行的使用 更好的技巧 比较语句中，将常量置于左位更佳 1 if(3 == a) // 优于 if(a == 3) (2) switch语句 switch语句也是一种分支语句，常常用于多分支的情况\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -242,23 +242,29 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#分支与循环语句">分支与循环语句</a>
+    <li><a href="#一-分支与循环语句">一. 分支与循环语句</a>
       <ol>
-        <li><a href="#语句">语句</a></li>
-        <li><a href="#分支语句">分支语句</a>
+        <li><a href="#1-语句">1. 语句</a></li>
+        <li><a href="#2-分支语句">2. 分支语句</a>
           <ol>
-            <li><a href="#if语句"><code>if</code>语句</a></li>
-            <li><a href="#switch语句"><code>switch</code>语句</a></li>
+            <li><a href="#1-if语句">(1) <code>if</code>语句</a></li>
+            <li><a href="#2-switch语句">(2) <code>switch</code>语句</a></li>
           </ol>
         </li>
-        <li><a href="#循环语句">循环语句</a>
+        <li><a href="#3-循环语句">3. 循环语句</a>
           <ol>
-            <li><a href="#while"><code>while</code></a></li>
-            <li><a href="#for"><code>for</code></a></li>
-            <li><a href="#do-while"><code>do while</code></a></li>
+            <li><a href="#1-while语句">(1) <code>while</code>语句</a></li>
+            <li><a href="#2-for语句">(2) <code>for</code>语句</a></li>
+            <li><a href="#3-do-while语句">(3) <code>do while</code>语句</a></li>
           </ol>
         </li>
-        <li><a href="#goto语句">goto语句</a></li>
+        <li><a href="#4-跳转语句">4. 跳转语句</a>
+          <ol>
+            <li><a href="#1-break语句">(1) <code>break</code>语句</a></li>
+            <li><a href="#2-continue语句">(2) <code>continue</code>语句</a></li>
+            <li><a href="#3-goto语句">(3) <code>goto</code>语句</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -330,8 +336,8 @@
     <section class="article-content">
     
     
-    <h2 id="分支与循环语句">分支与循环语句
-</h2><h3 id="语句">语句
+    <h2 id="一-分支与循环语句">一. 分支与循环语句
+</h2><h3 id="1-语句">1. 语句
 </h3><ul>
 <li>C语言的语句可以分为一下五类：
 <ul>
@@ -353,8 +359,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="分支语句">分支语句
-</h3><h4 id="if语句"><code>if</code>语句
+<h3 id="2-分支语句">2. 分支语句
+</h3><h4 id="1-if语句">(1) <code>if</code>语句
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -438,7 +444,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div></div>
-</blockquote><h4 id="switch语句"><code>switch</code>语句
+</blockquote><h4 id="2-switch语句">(2) <code>switch</code>语句
 </h4><p><code>switch</code>语句也是一种分支语句，常常用于<mark>多分支</mark>的情况</p>
 <p>比如：</p>
 <blockquote>
@@ -503,12 +509,264 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="循环语句">循环语句
-</h3><h4 id="while"><code>while</code>
-</h4><h4 id="for"><code>for</code>
-</h4><h4 id="do-while"><code>do while</code>
-</h4><h3 id="goto语句">goto语句
-</h3>
+</div><h3 id="3-循环语句">3. 循环语句
+</h3><h4 id="1-while语句">(1) <code>while</code>语句
+</h4><ol>
+<li>语法形式：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="n">expression</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">loop</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">++</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="n">i</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d &#34;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>
+<p>当条件不成立后，循环结束</p>
+<ul>
+<li>
+<p><code>break</code>用于永久地终止循环</p>
+</li>
+<li>
+<p><code>continue</code>用于跳过本次循环。直接进行下一次循环的判断</p>
+</li>
+</ul>
+</li>
+<li>
+<p>以下实例可用于清除输入缓冲区</p>
+<ul>
+<li>其中getchar函数的函数定义为<code>int getchar(void)</code>，其返回值为整型</li>
+<li>MSDN中，getchar()部分
+<ul>
+<li>其中<code>EOF</code>是<code>-1</code></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0118/image-20260118135242764.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20260118135242764"
+	
+	
+></p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">ch</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span><span class="p">((</span><span class="n">ch</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">())</span> <span class="o">!=</span> <span class="n">EOF</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">putchar</span><span class="p">(</span><span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote class="alert alert-note">
+    <div class="alert-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="alert-icon" fill="currentColor">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-8.5a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 7.5z"/>
+        </svg>
+        Note
+    </div>
+    <div class="alert-content">
+        <p>通过<code>scanf</code>函数的**<code>%m</code>格式控制<strong>可以指定输入域宽、输入数据域宽（列数），按此宽度截取所需数据；通过<code>printf</code>函数的</strong><code>%0</code>格式控制符**。输出数值时指定左面不使用的空位置自动填0</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">date</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%4d%2d%2d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">year</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">month</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">day</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d</span><span class="se">\n</span><span class="s">%02d</span><span class="se">\n</span><span class="s">%02d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">date</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>printf</code>函数的返回值为整型，若正确打印，则输出打印内容的数量，否则打印负数<img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0119/image-20260119213254215.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20260119213254215"
+	
+	
+></li>
+<li><mark>注意！！！最好在每个变量创建时给出初始值</mark></li>
+</ul></div>
+</blockquote><h4 id="2-for语句">(2) <code>for</code>语句
+</h4><ul>
+<li>语法结构
+<ul>
+<li><code>expression1</code>为初始化部分，用于初始化循环变量</li>
+<li><code>expression2</code>为条件判断部分，用于判断循环的终止</li>
+<li><code>expression3</code>为调整部分，用于循环条件的调整</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="n">expression1</span><span class="p">;</span> <span class="n">expression2</span><span class="p">;</span> <span class="n">expression3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">loop</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d &#34;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote class="alert alert-note">
+    <div class="alert-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="alert-icon" fill="currentColor">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-8.5a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 7.5z"/>
+        </svg>
+        Note
+    </div>
+    <div class="alert-content">
+        <ul>
+<li>不可以在for循环内修改循环变量，防止r循环失去控制</li>
+<li>建议for语句的循环控制变量的取值采用“前闭合后开区间”的写法</li>
+</ul></div>
+</blockquote><ul>
+<li><code>for</code>循环中的判断部分省略，意味着判断<mark>恒成立</mark></li>
+<li><code>C99</code>和<code>C++</code>支持<code>for(int i = 0; i &lt; 10 ; i++)</code>写法</li>
+<li>赋值语句中，<code>variable=value</code>的运算规则是：<strong>先把右边的值赋值给左边的变量，然后整个表达式返回这个被赋值的值</strong></li>
+</ul>
+<h4 id="3-do-while语句">(3) <code>do while</code>语句
+</h4><p><span style="color: red"> 至少循环一次</span>，但使用场景有限，不经常使用</p>
+<ul>
+<li>语法结构</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="n">loop</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="n">expression</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">do</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d &#34;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4-跳转语句">4. 跳转语句
+</h3><h4 id="1-break语句">(1) <code>break</code>语句
+</h4><h4 id="2-continue语句">(2) <code>continue</code>语句
+</h4><h4 id="3-goto语句">(3) <code>goto</code>语句
+</h4>
 </section>
 
 
@@ -531,7 +789,7 @@
 
 
         <span>
-            最后更新于 Jan 17, 2026 15:58
+            最后更新于 Jan 21, 2026 21:58
         </span>
     </section></footer>
 
