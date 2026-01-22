@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>hkul</copyright>
-        <lastBuildDate>Thu, 22 Jan 2026 14:44:37 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Jan 2026 21:39:15 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【Latex】入门学习</title>
         <link>https://camus0809.github.io/p/latex%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Mon, 12 Jan 2026 22:35:55 +0800</pubDate>
@@ -130,8 +130,28 @@
 &lt;li&gt;一个LaTeX文档分为&lt;mark&gt; 导言区和正文区&lt;/mark&gt;&lt;/li&gt;
 &lt;li&gt;使用&lt;code&gt;%&lt;/code&gt;进行注释&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;1-导言区&#34;&gt;1. 导言区
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h3 id=&#34;1-导言区&#34;&gt;1. 导言区
+&lt;/h3&gt;&lt;p&gt;&lt;mark&gt;主要用于进行全局设置&lt;/mark&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\documentclass&lt;/code&gt;用于设定文件的类型，实例为&lt;code&gt;article&lt;/code&gt;，此外还有&lt;code&gt;report&lt;/code&gt;、&lt;code&gt;letter&lt;/code&gt;、&lt;code&gt;book&lt;/code&gt;、&lt;code&gt;beamer&lt;/code&gt;、&lt;code&gt;minimal&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;article&lt;/code&gt;用于短文章、期刊论文、演示文档邀请函等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;report&lt;/code&gt;用于多章节的报告学士/硕士论文，支持&lt;code&gt;chapter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;book&lt;/code&gt;用于书籍排版，支持&lt;code&gt;chapter&lt;/code&gt;、&lt;code&gt;part&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;letter&lt;/code&gt;专用于信件设计，包含收发件人、日期等格式元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beamer&lt;/code&gt;用于制作幻灯片演示文稿&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;minimal&lt;/code&gt;用于测试和排错，只设置页面和字体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\title&lt;/code&gt;用于存储文档的标题文本&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\author&lt;/code&gt;用于存储文档的作者&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\date&lt;/code&gt;用于存储时间信息
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\today&lt;/code&gt;表示今天&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
@@ -147,8 +167,90 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\date&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\today&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;	&lt;span class=&#34;c&#34;&gt;% 文档日期
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;2-正文区文稿区&#34;&gt;2. 正文区（文稿区）
-&lt;/h4&gt;</description>
+&lt;/div&gt;&lt;h3 id=&#34;2-正文区&#34;&gt;2. 正文区
+&lt;/h3&gt;&lt;p&gt;又称文稿区&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\begin{document}&lt;/code&gt;之前的文本称为前导命令，会影响整个文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\end{document}&lt;/code&gt;之后的文本都会被忽略&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\maketitle&lt;/code&gt;用于给文档创建标题&lt;/li&gt;
+&lt;li&gt;可以直接输入文本，也可以使用&lt;code&gt;$$&lt;/code&gt;符号包裹公式输出&amp;ndash;&amp;gt;数学模式
+&lt;ul&gt;
+&lt;li&gt;其中&lt;code&gt;$$ $$&lt;/code&gt;的内容会换行居中显示，并显示编号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;document&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;\maketitle&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	Hello world!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	Let &lt;span class=&#34;s&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$&lt;/span&gt; be defined by the formula 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;s&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;x^&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;document&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0122/image-20260122161845360.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20260122161845360&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三-中文处理&#34;&gt;三. 中文处理
+&lt;/h2&gt;&lt;h3 id=&#34;0-预先准备&#34;&gt;0. 预先准备
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;确保TeXstudio中&lt;code&gt;选项--&amp;gt;设置TeXstudio--&amp;gt;构建&lt;/code&gt;中确保默认编译器为&lt;code&gt;XeLaTeX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;确保TeXstudio中&lt;code&gt;选项--&amp;gt;设置TeXstudio--&amp;gt;编译器&lt;/code&gt;中确保默认字符编码为&lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-使用ctex宏包&#34;&gt;1. 使用&lt;code&gt;ctex&lt;/code&gt;宏包
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;method 1
+&lt;ul&gt;
+&lt;li&gt;在&lt;code&gt;导言区&lt;/code&gt;引入ctex包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ctex&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;method 2
+&lt;ul&gt;
+&lt;li&gt;使用ctex宏包提供的中文文档类&lt;code&gt;ctexart&lt;/code&gt;、&lt;code&gt;ctexrep&lt;/code&gt;、&lt;code&gt;ctexbook&lt;/code&gt;、&lt;code&gt;ctexbreamer&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;div class=&#34;alert-title&#34;&gt;
+        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;alert-icon&#34; fill=&#34;currentColor&#34;&gt;
+            &lt;path d=&#34;M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-8.5a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 7.5z&#34;/&gt;
+        &lt;/svg&gt;
+        Note
+    &lt;/div&gt;
+    &lt;div class=&#34;alert-content&#34;&gt;
+        &lt;ul&gt;
+&lt;li&gt;可以在cmd中使用&lt;code&gt;texdoc ctex&lt;/code&gt;查看ctex宏包的文档&lt;/li&gt;
+&lt;li&gt;在cmd中使用&lt;code&gt;texdoc lshort-zh-cn&lt;/code&gt;查看简单的latex文档&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/blockquote&gt;</description>
         </item>
         
     </channel>
