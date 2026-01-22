@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="XML概述 引入 一段标准的XML数据格式：\nXML用途 最主要的功能：数据传输\n其他用途：\n程序之间的数据传输通讯\nPHP &lt;&ndash; 快递100 &lt;&ndash; Java语言&gt; 配置文件config.xml\nconfig.xml &ndash;&gt; PHP、Java、python 存储数据，充当小型数据库\ndata.xml 功能：规范数据格式，使数据具有结构性，易读易处理\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一. XML概述 1. 引入 一段标准的XML数据格式：\n2. XML用途 最主要的功能：数据传输\n其他用途：\n程序之间的数据传输通讯\nPHP &lt;&ndash; 快递100 &lt;&ndash; Java语言&gt; 配置文件config.xml\nconfig.xml &ndash;&gt; PHP、Java、python 存储数据，充当小型数据库\ndata.xml 功能：规范数据格式，使数据具有结构性，易读易处理\n">
 <title>【XML】入门学习</title>
 
 <link rel='canonical' href='https://camus0809.github.io/p/xml%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/'>
 
 <link rel="stylesheet" href="/scss/style.min.8f04a8107d90d9ad48016033530921ef715506a164959bfbb3fd6b2b4319b678.css"><meta property='og:title' content="【XML】入门学习">
-<meta property='og:description' content="XML概述 引入 一段标准的XML数据格式：\nXML用途 最主要的功能：数据传输\n其他用途：\n程序之间的数据传输通讯\nPHP &lt;&ndash; 快递100 &lt;&ndash; Java语言&gt; 配置文件config.xml\nconfig.xml &ndash;&gt; PHP、Java、python 存储数据，充当小型数据库\ndata.xml 功能：规范数据格式，使数据具有结构性，易读易处理\n">
+<meta property='og:description' content="一. XML概述 1. 引入 一段标准的XML数据格式：\n2. XML用途 最主要的功能：数据传输\n其他用途：\n程序之间的数据传输通讯\nPHP &lt;&ndash; 快递100 &lt;&ndash; Java语言&gt; 配置文件config.xml\nconfig.xml &ndash;&gt; PHP、Java、python 存储数据，充当小型数据库\ndata.xml 功能：规范数据格式，使数据具有结构性，易读易处理\n">
 <meta property='og:url' content='https://camus0809.github.io/p/xml%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='hkul'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='XML' /><meta property='article:tag' content='TOML' /><meta property='article:tag' content='YAML' /><meta property='article:tag' content='JSON' /><meta property='article:published_time' content='2026-01-11T17:00:27&#43;08:00'/><meta property='article:modified_time' content='2026-01-17T15:58:14&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='XML' /><meta property='article:tag' content='TOML' /><meta property='article:tag' content='YAML' /><meta property='article:tag' content='JSON' /><meta property='article:published_time' content='2026-01-11T17:00:27&#43;08:00'/><meta property='article:modified_time' content='2026-01-22T14:44:37&#43;08:00'/>
 <meta name="twitter:title" content="【XML】入门学习">
-<meta name="twitter:description" content="XML概述 引入 一段标准的XML数据格式：\nXML用途 最主要的功能：数据传输\n其他用途：\n程序之间的数据传输通讯\nPHP &lt;&ndash; 快递100 &lt;&ndash; Java语言&gt; 配置文件config.xml\nconfig.xml &ndash;&gt; PHP、Java、python 存储数据，充当小型数据库\ndata.xml 功能：规范数据格式，使数据具有结构性，易读易处理\n">
+<meta name="twitter:description" content="一. XML概述 1. 引入 一段标准的XML数据格式：\n2. XML用途 最主要的功能：数据传输\n其他用途：\n程序之间的数据传输通讯\nPHP &lt;&ndash; 快递100 &lt;&ndash; Java语言&gt; 配置文件config.xml\nconfig.xml &ndash;&gt; PHP、Java、python 存储数据，充当小型数据库\ndata.xml 功能：规范数据格式，使数据具有结构性，易读易处理\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -242,28 +242,28 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#xml概述">XML概述</a>
+    <li><a href="#一-xml概述">一. XML概述</a>
       <ol>
-        <li><a href="#引入">引入</a></li>
-        <li><a href="#xml用途">XML用途</a></li>
-        <li><a href="#什么是xml">什么是XML</a></li>
-        <li><a href="#xml规定">XML规定</a></li>
-        <li><a href="#xml和html区别">XML和HTML区别</a></li>
+        <li><a href="#1-引入">1. 引入</a></li>
+        <li><a href="#2-xml用途">2. XML用途</a></li>
+        <li><a href="#3-什么是xml">3. 什么是XML</a></li>
+        <li><a href="#4-xml规定">4. XML规定</a></li>
+        <li><a href="#5-xml和html区别">5. XML和HTML区别</a></li>
       </ol>
     </li>
-    <li><a href="#xml语法">XML语法</a>
+    <li><a href="#二-xml语法">二. XML语法</a>
       <ol>
-        <li><a href="#语法规则">语法规则</a></li>
-        <li><a href="#xml注意点">XML注意点</a></li>
-        <li><a href="#元素属性">元素属性</a></li>
-        <li><a href="#cdata">CDATA</a></li>
+        <li><a href="#1-语法规则">1. 语法规则</a></li>
+        <li><a href="#2-xml注意点">2. XML注意点</a></li>
+        <li><a href="#3-元素属性">3. 元素属性</a></li>
+        <li><a href="#4-cdata">4. CDATA</a></li>
       </ol>
     </li>
-    <li><a href="#相关语言">相关语言</a>
+    <li><a href="#三-相关语言">三. 相关语言</a>
       <ol>
-        <li><a href="#json">JSON</a></li>
-        <li><a href="#yaml">YAML</a></li>
-        <li><a href="#toml">TOML</a></li>
+        <li><a href="#1-json">1. JSON</a></li>
+        <li><a href="#2-yaml">2. YAML</a></li>
+        <li><a href="#3-toml">3. TOML</a></li>
       </ol>
     </li>
   </ol>
@@ -283,10 +283,6 @@
     <div class="article-details">
     
     <header class="article-category">
-        
-            <a href="/categories/code/" style="background-color: #2a9d8f; color: #fff;">
-                Code
-            </a>
         
             <a href="/categories/hobby/" style="background-color: #FFA500; color: #fff;">
                 Hobby
@@ -335,8 +331,8 @@
     <section class="article-content">
     
     
-    <h2 id="xml概述">XML概述
-</h2><h3 id="引入">引入
+    <h2 id="一-xml概述">一. XML概述
+</h2><h3 id="1-引入">1. 引入
 </h3><p>一段标准的XML数据格式：<img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0111/image-20260111234958782.png"
 	
 	
@@ -347,7 +343,7 @@
 	
 	
 ></p>
-<h3 id="xml用途">XML用途
+<h3 id="2-xml用途">2. XML用途
 </h3><ol>
 <li>
 <p>最主要的功能：<span style="color: red"><strong>数据传输</strong></span></p>
@@ -364,12 +360,12 @@
 <p>功能：<span style="color: blue">规范数据格式，使数据具有结构性，易读易处理</span></p>
 </li>
 </ol>
-<h3 id="什么是xml">什么是XML
+<h3 id="3-什么是xml">3. 什么是XML
 </h3><p>XML：可扩展性标记语言</p>
 <p>被发明的目的是<mark>传输和存储数据</mark>，而非展示数据</p>
 <p>XML的标签<mark>必须自定义</mark>,但是在写标签名的时候一定要有含义</p>
 <p>XML是W3C推举的数据传输格式</p>
-<h3 id="xml规定">XML规定
+<h3 id="4-xml规定">4. XML规定
 </h3><ol>
 <li>
 <p>后缀名为<code>.xml</code></p>
@@ -392,7 +388,7 @@
 </span></span><span class="line"><span class="cl"><span class="nt">&lt;/root&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="xml和html区别">XML和HTML区别
+</div><h3 id="5-xml和html区别">5. XML和HTML区别
 </h3><ol>
 <li>标签
 <ul>
@@ -413,8 +409,8 @@
 </ul>
 </li>
 </ol>
-<h2 id="xml语法">XML语法
-</h2><h3 id="语法规则">语法规则
+<h2 id="二-xml语法">二. XML语法
+</h2><h3 id="1-语法规则">1. 语法规则
 </h3><ol>
 <li><strong>XML必须要根节点</strong>
 <ul>
@@ -476,7 +472,7 @@
 </span></span><span class="line"><span class="cl"><span class="nt">&lt;a&gt;</span>ddd<span class="nt">&lt;b&gt;</span>eee<span class="nt">&lt;/a&gt;&lt;/b&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="xml注意点">XML注意点
+</div><h3 id="2-xml注意点">2. XML注意点
 </h3><ol>
 <li>注释方法</li>
 </ol>
@@ -533,7 +529,7 @@
       </tr>
   </tbody>
 </table></div>
-<h3 id="元素属性">元素属性
+<h3 id="3-元素属性">3. 元素属性
 </h3><p><span style="color: red">鸡肋</span>(在解析XML数据中,属性会带来额外的解析代码)</p>
 <ul>
 <li>一个标签可以有<mark>多个属性</mark></li>
@@ -569,7 +565,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>属性就是表示标签自身的一些<mark>额外信息</mark></p>
-<h3 id="cdata">CDATA
+<h3 id="4-cdata">4. CDATA
 </h3><p>CDATA区域内容不解析,格式为<code>&lt;[CDATA[无需解析的内容]]&gt;</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -605,10 +601,10 @@
     <div class="alert-content">
         <p>特殊字符较少时使用实体字符替换,较多时使用CDATA</p>
 <p><mark>CDATA必须大写</mark></p></div>
-</blockquote><h2 id="相关语言">相关语言
-</h2><h3 id="json">JSON
-</h3><h3 id="yaml">YAML
-</h3><h3 id="toml">TOML
+</blockquote><h2 id="三-相关语言">三. 相关语言
+</h2><h3 id="1-json">1. JSON
+</h3><h3 id="2-yaml">2. YAML
+</h3><h3 id="3-toml">3. TOML
 </h3>
 </section>
 
@@ -638,7 +634,7 @@
 
 
         <span>
-            最后更新于 Jan 17, 2026 15:58
+            最后更新于 Jan 22, 2026 14:44
         </span>
     </section></footer>
 
@@ -689,51 +685,25 @@
             
                 
 <article class="">
+    <a href="/p/batch-file%E5%AD%A6%E4%B9%A0/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【Batch file】学习</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/p/latex%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/">
         
         
 
         <div class="article-details">
             <h2 class="article-title">【Latex】入门学习</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/stm32hal%E5%BA%93%E5%AD%A6%E4%B9%A0/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">【STM32】HAL库学习</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/stm32%E6%A0%87%E5%87%86%E5%BA%93%E5%AD%A6%E4%B9%A0/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">【 STM32】标准库学习</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/c%E8%AF%AD%E8%A8%80%E5%88%9D%E9%98%B6%E5%AD%A6%E4%B9%A0/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">【C语言】初阶学习</h2>
         </div>
     </a>
 </article>

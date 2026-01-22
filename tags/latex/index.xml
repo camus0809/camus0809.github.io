@@ -7,27 +7,19 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>hkul</copyright>
-        <lastBuildDate>Wed, 21 Jan 2026 21:58:48 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Jan 2026 14:44:37 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【Latex】入门学习</title>
         <link>https://camus0809.github.io/p/latex%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Mon, 12 Jan 2026 22:35:55 +0800</pubDate>
         
         <guid>https://camus0809.github.io/p/latex%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/</guid>
-        <description>&lt;h2 id=&#34;预先准备&#34;&gt;预先准备
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.tug.org/texlive/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;h2 id=&#34;一-预先准备&#34;&gt;一. 预先准备
+&lt;/h2&gt;&lt;h3 id=&#34;1-texlive下载&#34;&gt;1. texlive下载
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.tug.org/texlive/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方网址&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;点击 &lt;code&gt;Ways to acquire TeX Live --&amp;gt; on DVD&lt;/code&gt;&lt;img src=&#34;https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0118/image-20260118133318353.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;image-20260118133318353&#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;p&gt;点击 &lt;code&gt;Ways to acquire TeX Live --&amp;gt; on DVD&lt;/code&gt;&lt;img src=&#34;https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0118/image-20260118133318353.png&#34; alt=&#34;image-20260118133318353&#34;  /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;点击&lt;code&gt;Burning your own DVD --&amp;gt; downloading the ISO image and burning your DVD&lt;/code&gt;&lt;img src=&#34;https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0118/image-20260118133430976.png&#34;
@@ -63,7 +55,100 @@
 &gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;h3 id=&#34;2-常用命令行命令&#34;&gt;2. 常用命令行命令
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;验证是否安装成功&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;导航到安装路径(&lt;code&gt;C:\texlive\2025&lt;/code&gt;)下查看&lt;code&gt;install-tl.log&lt;/code&gt;出现欢迎语句&lt;img src=&#34;https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0121/image-20260121221242185.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20260121221242185&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用命令验证&lt;code&gt;tex&lt;/code&gt;、&lt;code&gt;latex&lt;/code&gt;、&lt;code&gt;xelatex&lt;/code&gt;安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tex -version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;latex -version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xelatex -version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;使用&lt;code&gt;notepad&lt;/code&gt;创建编写&lt;code&gt;tex&lt;/code&gt;文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;notepad test.tex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;使用&lt;code&gt;latex&lt;/code&gt;命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;latex test.tex
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dvidpfmx test.dvi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;使用&lt;code&gt;xelatex&lt;/code&gt;命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xelatex test.tex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;二-基本结构&#34;&gt;二. 基本结构
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一个LaTeX文档分为&lt;mark&gt; 导言区和正文区&lt;/mark&gt;&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;%&lt;/code&gt;进行注释&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;1-导言区&#34;&gt;1. 导言区
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\documentclass&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;article&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;% book, report. letter
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\title&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;My First Documetnt&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;	&lt;span class=&#34;c&#34;&gt;% 文档标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\author&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;hkul&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;	&lt;span class=&#34;c&#34;&gt;% 文档作者
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\date&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\today&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;	&lt;span class=&#34;c&#34;&gt;% 文档日期
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;2-正文区文稿区&#34;&gt;2. 正文区（文稿区）
+&lt;/h4&gt;</description>
         </item>
         
     </channel>

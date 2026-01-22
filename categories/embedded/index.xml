@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Embedded on hkul</title>
-        <link>https://camus0809.github.io/tags/embedded/</link>
+        <link>https://camus0809.github.io/categories/embedded/</link>
         <description>Recent content in Embedded on hkul</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <copyright>hkul</copyright>
-        <lastBuildDate>Sat, 17 Jan 2026 15:58:14 +0800</lastBuildDate><atom:link href="https://camus0809.github.io/tags/embedded/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>hkul</copyright><atom:link href="https://camus0809.github.io/categories/embedded/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【 STM32】标准库学习</title>
         <link>https://camus0809.github.io/p/stm32%E6%A0%87%E5%87%86%E5%BA%93%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Tue, 13 Jan 2026 12:46:35 +0800</pubDate>
