@@ -10,7 +10,7 @@
 <meta property='og:description' content="一. 预先准备 1. texlive下载 官方网址\n点击 Ways to acquire TeX Live --&gt; on DVD\n点击Burning your own DVD --&gt; downloading the ISO image and burning your DVD\n点击download form a nearby CTAN mirror，选择最近的镜像站点进行下载后缀为iso的文件\n">
 <meta property='og:url' content='https://camus0809.github.io/p/latex%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='hkul'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Latex' /><meta property='article:published_time' content='2026-01-12T22:35:55&#43;08:00'/><meta property='article:modified_time' content='2026-01-24T22:33:51&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Latex' /><meta property='article:published_time' content='2026-01-12T22:35:55&#43;08:00'/><meta property='article:modified_time' content='2026-01-25T23:19:09&#43;08:00'/>
 <meta name="twitter:title" content="【Latex】入门学习">
 <meta name="twitter:description" content="一. 预先准备 1. texlive下载 官方网址\n点击 Ways to acquire TeX Live --&gt; on DVD\n点击Burning your own DVD --&gt; downloading the ISO image and burning your DVD\n点击download form a nearby CTAN mirror，选择最近的镜像站点进行下载后缀为iso的文件\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -248,21 +248,18 @@
         <li><a href="#2-常用命令行命令">2. 常用命令行命令</a></li>
       </ol>
     </li>
-    <li><a href="#二-基本结构">二. 基本结构</a>
+    <li><a href="#二-基本概念">二. 基本概念</a>
       <ol>
-        <li><a href="#1-导言区">1. 导言区</a></li>
-        <li><a href="#2-正文区">2. 正文区</a></li>
-      </ol>
-    </li>
-    <li><a href="#三-中文处理">三. 中文处理</a>
-      <ol>
-        <li><a href="#0-预先准备">0. 预先准备</a></li>
-        <li><a href="#1-使用ctex宏包">1. 使用<code>ctex</code>宏包</a></li>
-      </ol>
-    </li>
-    <li><a href="#四-字体设置">四. 字体设置</a>
-      <ol>
-        <li><a href="#1-字体属性">1. 字体属性</a></li>
+        <li><a href="#1-latex简单使用">1. LaTeX简单使用</a>
+          <ol>
+            <li><a href="#1使用命令行编写代码">（1）使用命令行编写代码</a></li>
+          </ol>
+        </li>
+        <li><a href="#2-命令和代码结构">2. 命令和代码结构</a>
+          <ol>
+            <li><a href="#1latex命令和环境">（1）LaTeX命令和环境</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -442,31 +439,14 @@
 <pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">xelatex test.tex
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="二-基本结构">二. 基本结构
-</h2><ul>
-<li>一个LaTeX文档分为<mark> 导言区和正文区</mark></li>
-<li>使用<code>%</code>进行注释</li>
-</ul>
-<h3 id="1-导言区">1. 导言区
-</h3><p><mark>主要用于进行全局设置</mark></p>
-<ul>
-<li><code>\documentclass</code>用于设定文件的类型，实例为<code>article</code>，此外还有<code>report</code>、<code>letter</code>、<code>book</code>、<code>beamer</code>、<code>minimal</code>
-<ul>
-<li><code>article</code>用于短文章、期刊论文、演示文档邀请函等</li>
-<li><code>report</code>用于多章节的报告学士/硕士论文，支持<code>chapter</code></li>
-<li><code>book</code>用于书籍排版，支持<code>chapter</code>、<code>part</code></li>
-<li><code>letter</code>专用于信件设计，包含收发件人、日期等格式元素</li>
-<li><code>beamer</code>用于制作幻灯片演示文稿</li>
-<li><code>minimal</code>用于测试和排错，只设置页面和字体</li>
-</ul>
-</li>
-<li><code>\title</code>用于存储文档的标题文本</li>
-<li><code>\author</code>用于存储文档的作者</li>
-<li><code>\date</code>用于存储时间信息
-<ul>
-<li><code>\today</code>表示今天</li>
-</ul>
-</li>
+</div><hr>
+<h2 id="二-基本概念">二. 基本概念
+</h2><h3 id="1-latex简单使用">1. LaTeX简单使用
+</h3><h4 id="1使用命令行编写代码">（1）使用命令行编写代码
+</h4><ul>
+<li>在待编写文件夹📁下打开cmd命令行</li>
+<li>使用notepad打开<code>helloworld.tex</code></li>
+<li>在弹出的notepad中编写下述LaTeX代码</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -477,25 +457,37 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span> <span class="c">% book, report. letter
-</span></span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">\title</span><span class="nb">{</span>My First Documetnt<span class="nb">}</span>	<span class="c">% 文档标题
-</span></span></span><span class="line"><span class="cl"><span class="k">\author</span><span class="nb">{</span>hkul<span class="nb">}</span>	<span class="c">% 文档作者
-</span></span></span><span class="line"><span class="cl"><span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>	<span class="c">% 文档日期
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">Hello world! from <span class="k">\LaTeX</span>.
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2-正文区">2. 正文区
-</h3><p>又称文稿区</p>
-<ul>
-<li><code>\begin{document}</code>之前的文本称为前导命令，会影响整个文档</li>
-<li><code>\end{document}</code>之后的文本都会被忽略</li>
-<li><code>\maketitle</code>用于给文档创建标题</li>
-<li>可以直接输入文本，也可以使用<code>$$</code>符号包裹公式输出&ndash;&gt;数学模式
-<ul>
-<li>其中<code>$$ $$</code>的内容会换行居中显示，并显示编号</li>
+</div><ul>
+<li>使用<code>xelatex</code>或者<code>pdflatex</code>命令进行编译</li>
 </ul>
-</li>
-</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">pdflatex helloworld
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">xelatex helloworld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote class="alert alert-note">
+    <div class="alert-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="alert-icon" fill="currentColor">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-8.5a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 7.5z"/>
+        </svg>
+        Note
+    </div>
+    <div class="alert-content">
+        <p>如需编写中文文档，可以使用宏包<code>ctex</code>或者使用<code>ctexart</code>文档类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -507,304 +499,35 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">	<span class="k">\maketitle</span>
-</span></span><span class="line"><span class="cl">	Hello world!
-</span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	Let <span class="s">$</span><span class="nb">f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="s">$</span> be defined by the formula 
-</span></span><span class="line"><span class="cl">	<span class="s">$</span><span class="nb">f</span><span class="o">(</span><span class="nb">x</span><span class="o">)=</span><span class="nb"> </span><span class="m">3</span><span class="nb">x^</span><span class="m">2</span><span class="o">+</span><span class="nb">x</span><span class="o">-</span><span class="m">1</span><span class="s">$</span>.
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% 使用ctex宏包
+</span></span></span><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>ctex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0122/image-20260122161845360.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="image-20260122161845360"
-	
-	
-></p>
-<h2 id="三-中文处理">三. 中文处理
-</h2><h3 id="0-预先准备">0. 预先准备
-</h3><ul>
-<li>确保TeXstudio中<code>选项--&gt;设置TeXstudio--&gt;构建</code>中确保默认编译器为<code>XeLaTeX</code></li>
-<li>确保TeXstudio中<code>选项--&gt;设置TeXstudio--&gt;编译器</code>中确保默认字符编码为<code>UTF-8</code></li>
-</ul>
-<h3 id="1-使用ctex宏包">1. 使用<code>ctex</code>宏包
-</h3><ul>
-<li>method 1
-<ul>
-<li>在<code>导言区</code>引入ctex包</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>ctex<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>method 2
-<ul>
-<li>使用ctex宏包提供的中文文档类<code>ctexart</code>、<code>ctexrep</code>、<code>ctexbook</code>、<code>ctexbreamer</code></li>
-</ul>
-</li>
-</ul>
-<blockquote class="alert alert-note">
-    <div class="alert-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="alert-icon" fill="currentColor">
-            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-8.5a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 7.5z"/>
-        </svg>
-        Note
-    </div>
-    <div class="alert-content">
-        <ul>
-<li>可以在cmd中使用<code>texdoc ctex</code>查看ctex宏包的文档</li>
-<li>在cmd中使用<code>texdoc lshort-zh-cn</code>查看简单的latex文档</li>
-</ul></div>
-</blockquote><h2 id="四-字体设置">四. 字体设置
-</h2><h3 id="1-字体属性">1. 字体属性
-</h3><p>在LaTeX中，一个字体有5种属性</p>
-<ul>
-<li>
-<p>字体编码</p>
-<ul>
-<li>正文字体编码：OT1、T1、EU1等</li>
-<li>数字字体编码：OML、OMS、OMX等</li>
-</ul>
-</li>
-<li>
-<p>字体族</p>
-<ul>
-<li>罗马字体<code>(Roman Family)</code>：笔画起始处有装饰</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\texrm</span><span class="nb">{</span>Roman Family<span class="nb">}</span>	<span class="c">% 带参数命令
-</span></span></span><span class="line"><span class="cl"><span class="k">\rmfamily</span> Roman Family	<span class="c">% 声明式命令
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>无衬线字体<code>(Sans Serif Family)</code>：笔画起始处无装饰</li>
-</ul>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\texsf</span><span class="nb">{</span>Sans Serif Family<span class="nb">}</span>
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% 使用ctex提供的文档类型
+</span></span></span><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>ctexart<span class="nb">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">\sffamily</span> Sans Serif Family
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>打字机字体<code>(Typewriter Family)</code>：每个字符宽度相同，又称等宽字体</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\textt</span> <span class="nb">{</span>Typewriter Family<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">\ttfamily</span> Typewriter Family
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0123/image-20260123214607531.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="image-20260123214607531"
-	
-	
-></p>
-<blockquote class="alert alert-note">
-    <div class="alert-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="alert-icon" fill="currentColor">
-            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-8.5a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 7.5z"/>
-        </svg>
-        Note
-    </div>
-    <div class="alert-content">
-        <p>可以使用<code>{}</code>进行分组</p></div>
-</blockquote><ul>
-<li>
-<p>字体系列</p>
-<ul>
-<li>粗细</li>
-<li>宽度</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\textmd</span><span class="nb">{</span>Medium Series<span class="nb">}</span> <span class="k">\textbf</span> <span class="nb">{</span>Boldface Series<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\mdseries</span> Medium Series<span class="nb">}</span> <span class="nb">{</span><span class="k">\bfseries</span> Boldface Series<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0123/image-20260123214630552.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="image-20260123214630552"
-	
-	
-></p>
-</li>
-<li>
-<p>字体形状</p>
-<ul>
-<li>直立</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\textup</span><span class="nb">{</span>Upright Shape<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\upshape</span> Upright Shape<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>斜体</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\textit</span><span class="nb">{</span>Italic Shape<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\itshape</span> Italic Shape<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>伪斜体</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\textsl</span> <span class="nb">{</span>Slanted Shape<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\slshape</span> Slanted Shape<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>小型大写</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\textsc</span> <span class="nb">{</span>Samll Caps Shape<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\scshape</span> Small Caps Shape<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><img src="https://raw.githubusercontent.com/camus0809/Typora_Image/devw/Image_2026/0123/image-20260123214640860.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="image-20260123214640860"
-	
-	
-></p>
-<ul>
-<li>中文字体
-<ul>
-<li><code>\quad</code>是空格命令</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\songti</span> 宋体<span class="nb">}</span> <span class="k">\quad</span> <span class="nb">{</span><span class="k">\heiti</span> 黑体<span class="nb">}</span> <span class="k">\quad</span> <span class="nb">{</span><span class="k">\fangsong</span> 仿宋<span class="nb">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">\quad</span> <span class="nb">{</span><span class="k">\kaishu</span> 楷书<span class="nb">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>字体大小</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\tiny</span> 			Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 极小
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\scriptsize</span> 	Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 脚本大小，用于角标
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\footnotesize</span> 	Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 脚注大小
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\small</span> 		Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 小号
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\normalsize</span> 	Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 默认正文大小
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\large</span> 		Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 大号
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\Large</span> 		Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 加大
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\LARGE</span>			Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 特大
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\huge</span>			Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 巨大
-</span></span></span><span class="line"><span class="cl"><span class="nb">{</span><span class="k">\Huge</span>			Hello<span class="nb">}</span><span class="k">\\</span>	<span class="c">% 最大
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>中文字体大小设置</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\zihao</span><span class="nb">{</span>5<span class="nb">}</span> 你好！
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
+</div></div>
+</blockquote><h3 id="2-命令和代码结构">2. 命令和代码结构
+</h3><h4 id="1latex命令和环境">（1）LaTeX命令和环境
+</h4><p><code>lshort-zh-cn</code> p4</p>
 
 </section>
 
@@ -828,7 +551,7 @@
 
 
         <span>
-            最后更新于 Jan 24, 2026 22:33
+            最后更新于 Jan 25, 2026 23:19
         </span>
     </section></footer>
 
